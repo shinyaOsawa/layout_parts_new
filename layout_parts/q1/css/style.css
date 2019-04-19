@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.main {
+  display: block;
+  background-color: #eff3f4;
+  margin: 0 auto;
+  width: 940px;
+}
 
+.back {
+  float: left;
+  padding: 20px;
+  background-color: #3274ae;
+  margin: 20px 0px 20px 20px;
+}
+
+.contents {
+  font-size:16px;
+  line-height: 16px;
+  background-color: #eaf4ff;
+  box-sizing: border-box;
+  width: 230px;
+  padding: 20px;
+  border: 10px solid #022336;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 /* 回答はここに書いてね */
