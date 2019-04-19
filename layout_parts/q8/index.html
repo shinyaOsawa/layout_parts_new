@@ -30,28 +30,28 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
-          <div class="q8 q8--btn">
+          <div class="q8 q8--btn smallparent">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="common small">common</div>
+            <div class="error small">error</div>
+            <div class="disabled small">disabled</div>
+            <div class="shadow small">shadow</div>
           </div>
 
-          <div class="q8 q8--btn">
+          <div class="q8 q8--btn middleparent">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="common middle">common</div>
+            <div class="error middle">error</div>
+            <div class="disabled middle">disabled</div>
+            <div class="shadow middle">shadow</div>
           </div>
 
-          <div class="q8 q8--btn">
+          <div class="q8 q8--btn largeparent">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="common large">common</div>
+            <div class="error large">error</div>
+            <div class="disabled large">disabled</div>
+            <div class="shadow large">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -99,7 +99,76 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+
+            <form class="container">
+
+              <div class="form_title">
+                <p class="form_title_text">Form Exercise</p>
+              </div>
+
+                <div class="form_main">
+                <div class="form_main_left">
+
+                  <div class="form_name clearfix">
+                    <p class="items">名前<span class="is-required">*</span></p>
+                    <input class="item_boxes focus" type="text" name="name" required>
+                  </div>
+                  <div class="form_sex clearfix">
+                    <p class="items">性別</p>
+                    <div class="sex_box">
+                      <input class="radio_btn" id="form_male_radio"  type="radio" name="gender" value="male">
+                      <label for="form_male_radio"><span class="radio_text">男性</span></label>
+
+                      <input class="radio_btn" id="form_female_radio" type="radio" name="gender" value="female">
+                      <label for="form_female_radio"><span class="radio_text">女性</span></label>
+
+                    </div>
+                  </div>
+
+
+                  <div class="form_hometown clearfix">
+                    <p class="items">出身</p>
+                      <select name="hometown" class="item_boxes hometown_select">
+                        <option value="tokyo">東京</option>
+                        <option value="saitama">埼玉</option>
+                        <option value="chiba">千葉</option>
+                        <option value="kanagawa">神奈川</option>
+                      </select>
+                  </div>
+
+
+                  <div class="form_email clearfix">
+                    <p class="items">Eメール<span class="is-required">*</span></p>
+                    <input class="item_boxes focus" type="email" name="email"  placeholder="ex) hoge@gmail.com" required>
+                  </div>
+
+
+                  <div class="form_number clearfix">
+                    <p class="items">電話番号</p>
+                    <input class="item_boxes focus" type="text" name="tel"  placeholder="ex) 08012345678">
+                  </div>
+              </div>
+
+            <div class="form_main_right">
+              <div class="form_textarea">
+                <textarea class="form_textarea_box focus" name="message" placeholder="何かあれば入力してください。"></textarea>
+              </div>
+            </div>
+          </div>
+
+            <div class="form_main_bottom">
+              <div class="form_over20 clearfix">
+                <div class="form_over20_contents">
+                  <input class="form_over20_check" id="over20" type="checkbox" name="twenty" value="true">
+                  <label for="over20"><span class="check_text">20歳以上です</span></label>
+                </div>
+              </div>
+
+              <button class="form_button active">送信</button>
+            </div>
+
+            </form>
+
           </div>
           <!-- 回答はここに書いてね -->
         </div>

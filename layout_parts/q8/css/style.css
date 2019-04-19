@@ -2,4 +2,319 @@
 
 /* 回答はここに書いてね */
 
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ４つの各フォームがフォーカスされた時のスタイル */
+.focus:focus {
+  box-shadow: 0 0 7px #00BCD4;
+  outline: 0;
+}
+/* 出身のセレクトボックスがフォーカスされた時のスタイル */
+.hometown_select:focus {
+  outline: 0;
+}
+/* ボタンが押し込まれた時のスタイル */
+.active:active {
+  outline: 0;
+  background-color: white;
+  color: #00BCD4;
+}
+
+/* アスタリスクマークを赤色に */
+.is-required {
+  color: red;
+}
+
+.small, .middle, .large {
+  vertical-align: middle;
+  display: inline-block;
+  color: white;
+  /* text-align: center; 元から問題文がtext-align: centerだったから不要。*/
+}
+
+.small {
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+
+.middle {
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.large {
+  height: 38px;
+  line-height: 38px;
+  font-size: 24px;
+  border-radius: 7px;
+  padding: 0 25px;
+}
+
+.common {
+  background-color: #00bcd4;
+}
+
+.error {
+  margin-left: 10px;
+  background-color: #ff4081;
+}
+
+.disabled {
+  margin-left: 10px;
+  background-color: #e5e5e5;
+}
+
+.shadow {
+  margin-left: 10px;
+  color: black;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .12), 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+.container {
+  width: 710px;
+  padding: 20px 10px 20px 20px;
+  margin: 0 auto;
+  background-color: #ECF1F2;
+}
+
+.form_title {
+  position: relative;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.form_main {
+  overflow: auto;
+  padding-top: 5px;
+}
+
+.form_title_text {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  background-color: #ECF1F2;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form_title:before {
+  position: absolute;
+  top: 50%;
+  width: 700px;
+  height: 1px;
+  background-color: #ccc;
+  content: "";
+}
+
+/* overflow auto ボックスに収まらない内容をどう表示するかは、ユーザーエージェントに依存する。内容が収まらない場合には、スクロールバーなどが表示される
+ overflow auto　を使うと、子要素のfloatの高さを親要素に認識させる。 */
+
+
+.form_main_left, .form_main_bottom {
+  width: 300px;
+}
+
+.form_main_bottom {
+  margin-top: 12px;
+  padding-top: 5px;
+  overflow: auto;
+}
+
+.form_main_left {
+  float: left;
+  }
+
+.form_main_right {
+  float: right;
+  padding-right: 10px;
+}
+
+/* 名前・性別・出身・Eメール・電話番号までの各項目 */
+.items {
+  float: left;
+  text-align: right;
+  display: inline-block;
+  width: 100px;
+  line-height: 25px;
+}
+
+/* itemsの項目における入力箇所 */
+.item_boxes {
+  float: right;
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px;
+  width: 170px;
+  border-style: none;
+  border-radius: 3px;
+}
+
+.sex_box {
+  float: right;
+  display: inline-block;
+  font-size: 16px;
+  width: 180px;
+  line-height: 25px;
+}
+
+.radio_btn {
+  display: none;
+}
+
+.radio_btn + label{
+  top: -1px;
+  padding: 3px 3px 3px 20px;
+  position:relative;
+}
+
+/* ラジオボタンの⭕️についてのCSS */
+.radio_btn + label::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* ラジオボタンにチェックされた時のCSS */
+.radio_btn:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background: #00BCD4;
+  border-radius: 50%;
+}
+
+.radio_text, .radio_btn {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hometown_select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 170px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.form_hometown {
+  position: relative;
+}
+
+/* セレクトボックスは親クラスに疑似要素をつける。 */
+.form_hometown::before {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
+
+.form_over20_contents, .form_button{
+  float: right;
+}
+
+/* input type="checkbox"のクラス */
+.form_over20_check {
+  display: none;
+}
+
+/* SPAN要素(20歳以上ですの本文) */
+.form_over20_check + label {
+  position: relative;
+  padding-left: 24px;
+}
+
+/* SPAN要素にbefore疑似要素（20歳以上ですの本文） */
+.form_over20_check + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* チェックされた後 */
+.form_over20_check:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+}
+
+.form_button {
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #00BCD4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  border: 0px;
+}
+
+.form_name, .form_sex, .form_hometown, .form_email, .form_over20 {
+  margin-bottom: 20px;
+}
+
+.form_textarea_box {
+  resize: none;
+  /* 右下に表示されるリサイズ用のUIをnone */
+  overflow: hidden;
+  /* ⚠️⚠️⚠️⚠️なぜか消えない⚠️⚠️⚠️⚠️ */
+  box-sizing: border-box;
+  width: 380px;
+  height: 203px;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+}
+
 /* 回答はここに書いてね */
