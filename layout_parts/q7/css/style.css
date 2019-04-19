@@ -2,4 +2,95 @@
 
 /* 回答はここに書いてね */
 
+.q7-1-1, .q7-1-2 {
+  box-sizing: border-box;
+  float: left;
+  width: 225px;
+  font-size: 16px;
+}
+
+.q7-1-2 {
+  margin-left: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.q7-2parent {
+  display: table;
+  height: 1000px;
+  }
+
+.q7-2-1, .q7-2-2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.q7-2-1child, .q7-2-2child {
+  box-sizing:border-box;
+  width: 225px;
+}
+
+.q7-2-2child {
+  margin-left: 50px;
+}
+
+.q7-3parent {
+  font-size: 0px;
+}
+
+.q7-3-1, .q7-3-2 {
+  font-size: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 225px;
+  vertical-align: middle;
+}
+
+.q7-3-2 {
+  margin-left: 50px;
+}
+
+.q7-4parent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.q7-4-1, .q7-4-2 {
+  box-sizing: border-box;
+  width: 225px;
+  padding: 10px;
+}
+
+.q7-5-1, .q7-5-2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.q7-5-1 {
+  float: left;
+  width: 300px;
+}
+
+
+.q7-5-2 {
+  float: left;
+  width: 100%;
+  margin-left: -300px;
+}
+
+.q7-5-2child {
+  margin-left: 350px;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* 回答はここに書いてね */
