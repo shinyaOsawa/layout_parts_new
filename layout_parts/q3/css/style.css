@@ -2,4 +2,33 @@
 
 /* 回答はここに書いてね */
 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+  /* 値をfixedにしてサイズを指定しなければ、セルの横幅が等幅になる。 */
+  line-height: 26px;
+}
+
+.table th, .table td {
+  border: solid #dedede 1px;
+  padding: 10px 0;
+  /* 上下10、左右0 */
+}
+
+.table tbody tr:nth-child(even) {
+  background: #ecf1f2;
+}
+
+.table th, .table td:first-child {
+  font-size: 18px;
+  background-color: #2244aa;
+  color: white;
+}
+
+.table tfoot {
+  border-top: dashed #000 2px;
+}
+
 /* 回答はここに書いてね */
