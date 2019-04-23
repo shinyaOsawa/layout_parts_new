@@ -10,7 +10,7 @@
 
 /* ４つの各フォームがフォーカスされた時のスタイル */
 .focus:focus {
-  box-shadow: 0 0 7px #00BCD4;
+  box-shadow: 0 0 7px #00bcd4;
   outline: 0;
 }
 /* 出身のセレクトボックスがフォーカスされた時のスタイル */
@@ -21,7 +21,7 @@
 .active:active {
   outline: 0;
   background-color: white;
-  color: #00BCD4;
+  color: #00bcd4;
 }
 
 /* アスタリスクマークを赤色に */
@@ -83,7 +83,7 @@
   width: 710px;
   padding: 20px 10px 20px 20px;
   margin: 0 auto;
-  background-color: #ECF1F2;
+  background-color: #ecf1f2;
 }
 
 .form_title {
@@ -101,7 +101,7 @@
   position: relative;
   display: inline-block;
   padding-right: 10px;
-  background-color: #ECF1F2;
+  background-color: #ecf1f2;
   font-size: 24px;
   font-weight: bold;
 }
@@ -179,7 +179,6 @@
 /* ラジオボタンの⭕️についてのCSS */
 .radio_btn + label::before{
   content: "";
-  display: block;
   position: absolute;
   top: 50%;
   left: 0;
@@ -195,14 +194,13 @@
 /* ラジオボタンにチェックされた時のCSS */
 .radio_btn:checked + label::after {
   content: "";
-  display: block;
   position: absolute;
   top: 50%;
   left: 4px;
   width: 8px;
   height: 8px;
-  margin-top: -4px;
-  background: #00BCD4;
+  margin-top: -3px;
+  background: #00bcd4;
   border-radius: 50%;
 }
 
@@ -218,7 +216,7 @@
   width: 170px;
   padding: 5px;
   border-radius: 3px;
-  background-color: #FFF;
+  background-color: #fff;
   font-size: 12px;
   line-height: 12px;
   cursor: pointer;
@@ -236,8 +234,8 @@
   right: 10px;
   width: 8px;
   height: 8px;
-  border-right: 2px solid #E5E5E5;
-  border-bottom: 2px solid #E5E5E5;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
   transform: rotate(45deg);
   content: "";
   pointer-events: none;
@@ -261,7 +259,6 @@
 /* SPAN要素にbefore疑似要素（20歳以上ですの本文） */
 .form_over20_check + label::before {
   content: "";
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -274,22 +271,21 @@
 /* チェックされた後 */
 .form_over20_check:checked + label::after {
   content: "";
-  display: block;
   position: absolute;
   top: 50%;
   left: 6px;
   margin-top: -14px;
   width: 8px;
   height: 16px;
-  border-right: 3px solid #00BCD4;
-  border-bottom: 3px solid #00BCD4;
+  border-right: 3px solid #00bcd4;
+  border-bottom: 3px solid #00bcd4;
   transform: rotate(45deg);
 }
 
 .form_button {
   padding: 0 10px;
   border-radius: 5px;
-  background-color: #00BCD4;
+  background-color: #00bcd4;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
