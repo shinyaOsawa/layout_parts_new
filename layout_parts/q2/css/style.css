@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.main {
+.q2__main {
   box-sizing: border-box;
   width: 940px;
   background-color: #eff3f4;
@@ -9,19 +9,18 @@
   margin: 0 auto;
 }
 
-.img1 {
+.img-left {
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.img2 {
+.img-right {
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.contents {
-  /* white-space: */
+.q2__contents {
   word-break: break-all;
   font-size: 18px;
   line-height: 22px;
