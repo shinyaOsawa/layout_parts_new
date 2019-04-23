@@ -2,7 +2,7 @@
 
 /* 回答はここに書いてね */
 
-.q6parent {
+.q6-1-1parent {
   text-align: center;
 }
 
@@ -23,11 +23,11 @@
   padding: 10px;
 }
 
-.q6-2-1parent {
+.q6-2-1grandpa {
   display: table;
 }
 
-.q6-2-1 {
+.q6-2-1parent {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -39,12 +39,12 @@
   align-items: center;
 }
 
-.q6-2-1child, .q6-2-2 {
+.q6-2-1, .q6-2-2 {
   background-color: #fff;
   padding: 10px;
 }
 
-.q6-2-1child {
+.q6-2-1 {
   display: inline-block;
 }
 
