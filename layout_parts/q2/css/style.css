@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
 .q2__main {
   box-sizing: border-box;
   width: 940px;
@@ -24,12 +31,5 @@
   word-break: break-all;
   font-size: 18px;
   line-height: 22px;
-}
-
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
 }
 /* 回答はここに書いてね */
