@@ -94,6 +94,7 @@
 
 .form_main {
   overflow: auto;
+  /* このせいでスクロールバーが出てたよ。 */
   padding-top: 5px;
 }
 
@@ -312,7 +313,7 @@
   border-radius: 3px;
 }
 
-.form_textarea_box::-webkit-scrollbar {
+.form_main::-webkit-scrollbar {
   display: none;
 }
 
