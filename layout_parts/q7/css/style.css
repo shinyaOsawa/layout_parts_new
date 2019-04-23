@@ -2,14 +2,21 @@
 
 /* 回答はここに書いてね */
 
-.q7-1-1, .q7-1-2 {
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.q7-1__box {
   box-sizing: border-box;
   float: left;
   width: 225px;
   font-size: 16px;
 }
 
-.q7-1-2 {
+.q7-1__box:last-child {
   margin-left: 50px;
 }
 
@@ -23,17 +30,17 @@
   display: table;
   }
 
-.q7-2-1, .q7-2-2 {
+.q7-2__box {
   display: table-cell;
   vertical-align: middle;
 }
 
-.q7-2-1child, .q7-2-2child {
+.q7-2__box__text {
   box-sizing:border-box;
   width: 225px;
 }
 
-.q7-2-2child {
+.q7-2__right {
   margin-left: 50px;
 }
 
@@ -41,7 +48,7 @@
   font-size: 0px;
 }
 
-.q7-3-1, .q7-3-2 {
+.q7-3__box {
   font-size: 16px;
   box-sizing: border-box;
   display: inline-block;
@@ -49,7 +56,7 @@
   vertical-align: middle;
 }
 
-.q7-3-2 {
+.q7-3__box:last-child {
   margin-left: 50px;
 }
 
@@ -59,37 +66,30 @@
   justify-content: space-around;
 }
 
-.q7-4-1, .q7-4-2 {
+.q7-4__box {
   box-sizing: border-box;
   width: 225px;
   padding: 10px;
 }
 
 .q7-5-1, .q7-5-2 {
+  float: left;
   display: inline-block;
   vertical-align: top;
 }
 
 .q7-5-1 {
-  float: left;
   width: 300px;
 }
 
 
 .q7-5-2 {
-  float: left;
   width: 100%;
   margin-left: -300px;
 }
 
 .q7-5-2child {
   margin-left: 350px;
-}
-
-.clearfix::after{
-  content: "";
-  display: block;
-  clear: both;
 }
 
 /* 回答はここに書いてね */
