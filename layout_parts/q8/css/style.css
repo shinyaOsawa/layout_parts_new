@@ -33,7 +33,6 @@
   vertical-align: middle;
   display: inline-block;
   color: white;
-  /* text-align: center; 元から問題文がtext-align: centerだったから不要。*/
 }
 
 .small {
@@ -315,6 +314,10 @@
   font-size: 12px;
   border: none;
   border-radius: 3px;
+}
+
+.form_textarea_box::-webkit-scrollbar {
+  display: none;
 }
 
 /* 回答はここに書いてね */
