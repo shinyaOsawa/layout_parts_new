@@ -22,7 +22,7 @@
   background: #ecf1f2;
 }
 
-.q3__table th, .q3__table td:first-child {
+.q3__table th {
   font-size: 18px;
   background-color: #2244aa;
   color: white;
