@@ -2,17 +2,12 @@
 
 /* 回答はここに書いてね */
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .q4__cell{
   display: table-cell;
   padding: 20px;
   font-size: 16px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .q4__main {
@@ -22,8 +17,6 @@
 .q4__bar {
   display: table;
   width: 100%;
-  height: 56px;
-  background-color: black;
   font-size: 0px;
 }
 
@@ -36,7 +29,6 @@
   background-color: #fdc8b8;
 }
 .q4__head__center {
-  width: auto;
   background-color: #e0abd9;
 }
 .q4__head__right {
@@ -44,11 +36,9 @@
   background-color: #b6d8ed;
 }
 .q4__foot__left {
-  max-width: 100px;
   background-color: #e5d32e;
 }
 .q4__foot__center {
-  max-width: 100px;
   background-color: #ec8f9a;
 }
 .q4__foot__right {
