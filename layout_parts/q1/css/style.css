@@ -1,21 +1,33 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.main {
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.q1__main {
   display: block;
   background-color: #eff3f4;
   margin: 0 auto;
-  width: 940px;
+  width: 900px;
+  padding: 20px;
 }
 
-.back {
+.q1__background {
   float: left;
   padding: 20px;
   background-color: #3274ae;
-  margin: 20px 0px 20px 20px;
+  margin-left: 20px;
 }
 
-.contents {
+.q1__background:first-child {
+  margin: 0;
+}
+
+.q1__text {
   font-size:16px;
   line-height: 16px;
   background-color: #eaf4ff;
@@ -25,9 +37,4 @@
   border: 10px solid #022336;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 /* 回答はここに書いてね */
