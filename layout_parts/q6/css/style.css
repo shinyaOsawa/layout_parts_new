@@ -2,11 +2,11 @@
 
 /* 回答はここに書いてね */
 
-.q6-1-1parent {
+.text-align-parent {
   text-align: center;
 }
 
-.q6-1-1 {
+.text-align {
   display: inline-block;
   width: 90px;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   padding: 10px;
 }
 
-.q6-1-2 {
+.margin {
   margin: 0 auto;
   text-align: center;
   width: 90px;
@@ -23,54 +23,52 @@
   padding: 10px;
 }
 
-.q6-2-1grandpa {
+.table-grandpa {
   display: table;
 }
 
-.q6-2-1parent {
+.table-parent {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
-.q6-2-2parent {
+.flex-parent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.q6-2-1, .q6-2-2 {
+.table, .flex {
   background-color: #fff;
   padding: 10px;
 }
 
-.q6-2-1 {
+.table {
   display: inline-block;
 }
 
-.q6-3-1parent {
+.fix-parent {
   position: relative;
-  display: block;
   background-color: black;
 }
 
-.q6-3-1 {
+.fix {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: block;
   margin: auto;
   width: 110px;
   height: 30px;
 }
 
-.q6-3-2parent {
+.variable-parent {
   position: relative;
 }
 
-.q6-3-2 {
+.variable {
   position: absolute;
   top: 50%;
   left: 50%;
