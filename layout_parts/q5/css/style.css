@@ -16,10 +16,10 @@
 .boxes {
   width: 100px;
   height: 100px;
+  position: absolute;
 }
 
 .box1{
-  position: absolute;
   z-index: 10;
   top: 40px;
   left: 200px;
@@ -27,7 +27,6 @@
 }
 
 .box2{
-  position: absolute;
   z-index: 20;
   top: 120px;
   left: 280px;
@@ -35,7 +34,6 @@
 }
 
 .box3{
-  position: absolute;
   z-index: 30;
   top: 200px;
   left: 360px;
@@ -43,7 +41,6 @@
 }
 
 .box4{
-  position: absolute;
   z-index: 40;
   top: 280px;
   left: 280px;
@@ -51,7 +48,6 @@
 }
 
 .box5{
-  position: absolute;
   z-index: 50;
   top: 360px;
   left: 200px;
@@ -59,7 +55,6 @@
 }
 
 .box6{
-  position: absolute;
   z-index: 60;
   top: 280px;
   left: 120px;
@@ -67,7 +62,6 @@
 }
 
 .box7{
-  position: absolute;
   z-index: 70;
   top: 200px;
   left: 40px;
@@ -75,7 +69,6 @@
 }
 
 .box8{
-  position: absolute;
   z-index: 80;
   top: 120px;
   left: 120px;
@@ -87,10 +80,9 @@
   position: absolute;
   z-index: 90;
   top: 0;
-  left: 80px;
+  right: 0;
   width: 20px;
   height: 20px;
-  /* background-color: black; */
   background-color: #ffefd3;
 }
 
